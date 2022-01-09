@@ -37,9 +37,24 @@
   }
 }
 
-.homecomponent{
+.homecomponent {
+  text-align: center;
   display: flex;
   margin: auto;
   padding: auto;
   color: white;
+}
+
+.imagee {
+  border: 4px solid black;
+  display: flex;
+  margin: auto;
+  padding: auto;
+  height: 50rem;
+  width: 50rem;
+}
+.truck {
+  width: 50%;
+  margin: 0 auto;
+  padding: 5%c;
 }

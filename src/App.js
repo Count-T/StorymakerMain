@@ -8,10 +8,13 @@ function App() {
     <BrowserRouter className="App">
       <nav>
         <div className="row px-3 py-3">
-          <Link className="col-md-auto" to="/">Home</Link>
-          <Link className="col-md-auto" to="/story">Story Maker</Link>
+          <Link className="col-md-auto text-light" to="/">
+            Home
+          </Link>
+          <Link className="col-md-auto text-light" to="/story">
+            Story Maker
+          </Link>
         </div>
-
       </nav>
       <Switch>
         <Route exact path="/" component={Home}></Route>
