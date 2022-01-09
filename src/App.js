@@ -7,12 +7,11 @@ function App() {
   return (
     <BrowserRouter className="App">
       <nav>
-        <li>
-          <Link to="/">Home</Link>
-        </li>
-        <li>
-          <Link to="/story">Story Maker</Link>
-        </li>
+        <div className="row px-3 py-3">
+          <Link className="col-md-auto" to="/">Home</Link>
+          <Link className="col-md-auto" to="/story">Story Maker</Link>
+        </div>
+
       </nav>
       <Switch>
         <Route exact path="/" component={Home}></Route>

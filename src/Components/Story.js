@@ -18,15 +18,30 @@ function Story() {
   };
   return (
     <div>
-      <h1>Story Maker</h1>
-      <form onSubmit={updateStory}>
-        <input type="text" onChange={handleChange} />
-        <button>Enter Word</button>
-      </form>
-      <h2>{story}</h2>
-      <button onClick={playTTS}>Text to Speech</button>
-      <button>Text to Speech Download</button>
+      <div className="d-flex justify-content-center bg-dark ">
+      
+        <h1 className="text-light bg-dark">Story Maker</h1>
+     </div>
+     
+      <div className="mx-auto px-5 d-flex justify-content-center bg-dark py-5">
+        <form onSubmit={updateStory}>
+          <input className="text-light bg-dark mx-auto px-3" type="text" onChange={handleChange} />
+          <button className="text-light bg-dark ">Enter Word</button>
+        </form>
+      </div>
+
+        <div className="d-flex justify-content-center bg-dark my-auto py-3">
+          <button className="text-light bg-dark my-auto py-3" onClick={playTTS}>Text to Speech</button>
+          
+        </div>
+
+        <p className="text-light bg-dark mx-auto px-3">{story}</p>
+        
+      
+      
     </div>
+
+    
   );
 }
 
